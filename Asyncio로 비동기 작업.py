@@ -37,9 +37,11 @@ async def main():   #여러 함수가 여러 요청을 할 함수이니 비동�
     res = await asyncio.gather(*futures)  #gather: 일이 다 끝난 후 모아주는 역할. 위치 인수(순서대로 여러개를 넣는 인수)로 인수를 받으므로 list를 언패킹 해줘야함. gather([a,b,c]) -> gather(a,b,c)
     print()
     #결과 확인
-    print(
-        'Result : ', res
-    )
+    print('Result : ', res)
+    
+# 추가 함수
+# asyncio.wait(fts, return_when = ) fts 동시실행하고 return_when에 조건에 따라 함수를 종료시킨다. FIRST_COMPLETE, FRIST_EXCEPTION, ALL_COMPLETE
+# asyncio.as_completed(fts, *args, timeout = ) fts의 awaitalb객체를 동시에 실행시킨다. timeout 이 지나고 작업이 완료되지 않으면 timeout error를 발생시킨다.
 
 if __name__ == '__main__':
     # 루프 생성

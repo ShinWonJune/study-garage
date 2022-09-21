@@ -7,4 +7,6 @@
   - function, variable 복습
 0922 수요일
   - f-string 및 string에 적용하는 함수들(find(),count(),upper() 등)에 대해 복습
-  - 
+  - list의 다양한 활용에 대한 복습
+    -pprint에 대한 학습
+  - pythonic programming 에 대한 복습(generator 등)  
